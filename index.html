@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Haqsec | Professional Security & Cleaning Services</title>
+    <title>Haqsec | Enterprise Security & Cleaning Services</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,83 +11,124 @@
     <!-- Navigation -->
     <header class="navbar">
         <div class="container nav-content">
-            <div class="logo">Haqsec.</div>
-            <nav>
+            <div class="logo">Haqsec<span class="accent-dot">.</span></div>
+            <div class="mobile-menu-btn" id="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav id="nav-menu">
                 <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
+                    <li><a href="#about">Company</a></li>
                     <li><a href="#services">Services</a></li>
-                    <li><a href="#sectors">Sectors We Serve</a></li>
-                    <li><a href="#contact" class="btn-primary">Contact Us</a></li>
+                    <li><a href="#sectors">Sectors</a></li>
+                    <li><a href="#contact" class="btn-primary">Request Consultation</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <!-- Hero Section -->
+    <!-- Professional Hero Section -->
     <section class="hero">
-        <div class="container hero-content">
-            <h1>Comprehensive Security & Cleaning Solutions</h1>
-            <p>Delivering peace of mind and pristine environments for individuals and enterprises.</p>
-            <a href="#contact" class="btn-primary btn-large">Get a Quote</a>
+        <div class="hero-overlay"></div>
+        <div class="container hero-content animate-on-scroll">
+            <h1>Uncompromising Security. <br>Pristine Environments.</h1>
+            <p>Delivering elite protection and specialized cleaning solutions for embassies, financial institutions, and private enterprises.</p>
+            <div class="hero-actions">
+                <a href="#contact" class="btn-primary btn-large">Get a Custom Quote</a>
+                <a href="#services" class="btn-outline btn-large">Explore Services</a>
+            </div>
         </div>
     </section>
 
+    <!-- Trust Indicators -->
+    <div class="trust-bar bg-light-blue">
+        <div class="container trust-grid">
+            <div class="trust-item animate-on-scroll">
+                <strong>✓ 24/7 Operations</strong>
+                <span>Always active, always ready.</span>
+            </div>
+            <div class="trust-item animate-on-scroll" style="transition-delay: 0.1s;">
+                <strong>✓ Certified Personnel</strong>
+                <span>Rigorously vetted and trained.</span>
+            </div>
+            <div class="trust-item animate-on-scroll" style="transition-delay: 0.2s;">
+                <strong>✓ Tailored Solutions</strong>
+                <span>Custom plans for your specific sector.</span>
+            </div>
+        </div>
+    </div>
+
     <!-- Services Section -->
     <section id="services" class="container section">
-        <h2 class="section-title">Our Core Services</h2>
+        <div class="section-header animate-on-scroll">
+            <span class="subtitle">Our Expertise</span>
+            <h2>Core Integrated Services</h2>
+            <div class="divider"></div>
+        </div>
+        
         <div class="grid-2">
-            <!-- Security Service Card -->
-            <div class="card">
-                <!-- Replace src with your actual image -->
-                <img src="https://placehold.co/600x400/e0f2fe/0284c7?text=Security+Services" alt="Security Personnel" class="responsive-img">
+            <div class="card animate-on-scroll" style="transition-delay: 0.1s;">
+                <img src="https://placehold.co/800x500/0f172a/ffffff?text=Security+Operations" alt="Security Personnel" class="responsive-img">
                 <div class="card-content">
                     <h3>Security Services</h3>
-                    <p>Highly trained personnel equipped to protect your assets, personnel, and premises with uncompromising vigilance.</p>
+                    <p>Highly trained personnel equipped to protect your assets, staff, and premises with uncompromising vigilance. We offer access control, perimeter security, and continuous monitoring.</p>
+                    <a href="#contact" class="link-arrow">Secure your premises &rarr;</a>
                 </div>
             </div>
-            <!-- Cleaning Service Card -->
-            <div class="card">
-                <!-- Replace src with your actual image -->
-                <img src="https://placehold.co/600x400/e0f2fe/0284c7?text=Cleaning+Services" alt="Cleaning Staff" class="responsive-img">
+            <div class="card animate-on-scroll" style="transition-delay: 0.2s;">
+                <img src="https://placehold.co/800x500/0284c7/ffffff?text=Corporate+Cleaning" alt="Cleaning Staff" class="responsive-img">
                 <div class="card-content">
-                    <h3>Cleaning Services</h3>
-                    <p>Professional janitorial and deep-cleaning solutions ensuring a hygienic, welcoming environment for your operations.</p>
+                    <h3>Corporate Cleaning</h3>
+                    <p>Professional janitorial and deep-cleaning solutions ensuring a hygienic, welcoming environment for your operations, adhering to the highest global health standards.</p>
+                    <a href="#contact" class="link-arrow">Request facility management &rarr;</a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Sectors Section -->
-    <section id="sectors" class="section bg-light-blue">
+    <section id="sectors" class="section bg-light-blue border-top-bottom">
         <div class="container">
-            <h2 class="section-title">Who We Serve</h2>
+            <div class="section-header animate-on-scroll">
+                <span class="subtitle">Clientele</span>
+                <h2>Sectors We Serve</h2>
+                <div class="divider"></div>
+            </div>
             <div class="grid-5 sectors-list">
-                <div class="sector-item">Individuals</div>
-                <div class="sector-item">Embassies</div>
-                <div class="sector-item">Offices</div>
-                <div class="sector-item">Financial Institutions</div>
-                <div class="sector-item">Building Sites</div>
+                <div class="sector-item animate-on-scroll">Individuals</div>
+                <div class="sector-item animate-on-scroll" style="transition-delay: 0.1s;">Embassies</div>
+                <div class="sector-item animate-on-scroll" style="transition-delay: 0.2s;">Corporate Offices</div>
+                <div class="sector-item animate-on-scroll" style="transition-delay: 0.3s;">Financial Institutions</div>
+                <div class="sector-item animate-on-scroll" style="transition-delay: 0.4s;">Building Sites</div>
             </div>
         </div>
     </section>
 
     <!-- Contact & Location Section -->
     <section id="contact" class="container section">
-        <h2 class="section-title">Get in Touch</h2>
-        <div class="grid-2">
-            <div class="contact-info">
-                <h3>Contact Information</h3>
-                <p>Reach out to us to discuss your security and cleaning needs.</p>
-                <ul class="contact-list">
-                    <li><strong>Phone:</strong> +251 XX XXX XXXX</li>
-                    <li><strong>Email:</strong> info@haqsec.com</li>
-                    <li><strong>Address:</strong> Addis Ababa, Ethiopia</li>
-                </ul>
+        <div class="grid-2 align-center">
+            <div class="contact-info animate-on-scroll">
+                <span class="subtitle">Contact Us</span>
+                <h2>Ready to elevate your standards?</h2>
+                <p class="contact-desc">Reach out to our management team to discuss a tailored security and facility management plan for your organization.</p>
+                
+                <div class="contact-details">
+                    <div class="contact-row">
+                        <strong>General Inquiries:</strong> <a href="mailto:info@haqsec.com">info@haqsec.com</a>
+                    </div>
+                    <div class="contact-row">
+                        <strong>Dispatch / Operations:</strong> +251 XX XXX XXXX
+                    </div>
+                    <div class="contact-row">
+                        <strong>Headquarters:</strong> Addis Ababa, Ethiopia
+                    </div>
+                </div>
             </div>
-            <div class="map-container">
-                <!-- Google Maps Link Placeholder -->
+            
+            <div class="map-container animate-on-scroll" style="transition-delay: 0.2s;">
                 <div class="map-placeholder">
-                    <p><em>Google Maps Embed Will Go Here</em></p>
+                    <p><em>Google Maps Embedded Here</em></p>
                 </div>
             </div>
         </div>
@@ -95,10 +136,12 @@
 
     <!-- Footer -->
     <footer>
-        <div class="container">
+        <div class="container footer-content">
+            <div class="footer-logo">Haqsec.</div>
             <p>&copy; 2026 Haqsec Security & Cleaning. All rights reserved.</p>
         </div>
     </footer>
 
+    <script src="app.js"></script>
 </body>
 </html>
