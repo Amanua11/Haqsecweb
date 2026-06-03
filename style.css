@@ -184,8 +184,9 @@ p { margin-bottom: 16px; color: var(--text-light); }
 .contact-row a { color: var(--primary-blue); text-decoration: none; }
 .contact-row a:hover { text-decoration: underline; }
 
-.map-placeholder {
-    background-color: var(--secondary-blue);
+/* Interactive Map Card */
+.map-interactive {
+    background: url('https://placehold.co/800x600/e2e8f0/94a3b8?text=Map+View') center/cover no-repeat;
     width: 100%;
     height: 100%;
     min-height: 400px;
@@ -193,9 +194,25 @@ p { margin-bottom: 16px; color: var(--text-light); }
     align-items: center;
     justify-content: center;
     border-radius: 4px;
-    color: var(--text-light);
     border: 1px solid var(--border-color);
+    position: relative;
+    overflow: hidden;
 }
+.map-interactive::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(15, 23, 42, 0.85);
+    z-index: 1;
+}
+.map-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: 32px;
+}
+.map-content h3 { color: var(--white); margin-bottom: 8px; }
+.map-content p { color: #cbd5e1; margin-bottom: 24px; font-size: 1.05rem; }
 
 /* Footer */
 footer {
