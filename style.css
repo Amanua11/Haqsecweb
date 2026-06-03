@@ -110,7 +110,7 @@ p { margin-bottom: 16px; color: var(--text-light); }
     min-height: 600px;
     display: flex;
     align-items: center;
-    background: url('https://placehold.co/1920x1080/0f172a/0284c7?text=Corporate+Building+Background') center/cover no-repeat;
+    background: url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
 }
 .hero-overlay {
     position: absolute;
@@ -136,7 +136,7 @@ p { margin-bottom: 16px; color: var(--text-light); }
 
 /* Layout Grids */
 .grid-2 { display: grid; grid-template-columns: 1fr; gap: 40px; }
-.grid-5 { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 20px; }
+.grid-5 { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 20px; align-items: stretch; }
 @media (min-width: 768px) { .grid-2 { grid-template-columns: 1fr 1fr; } }
 
 /* Cards (Services) */
@@ -158,22 +158,51 @@ p { margin-bottom: 16px; color: var(--text-light); }
 .link-arrow { color: var(--primary-blue); text-decoration: none; font-weight: 600; font-size: 0.95rem; display: inline-block; margin-top: 10px; transition: 0.2s; }
 .link-arrow:hover { color: var(--primary-blue-hover); transform: translateX(4px); }
 
-/* Sectors */
+/* Sectors with Hover Reveal */
 .sectors-list { margin-top: 40px; }
 .sector-item {
     background-color: var(--white);
     border: 1px solid var(--border-color);
     padding: 24px 20px;
     text-align: center;
-    font-weight: 600;
     border-radius: 4px;
     color: var(--dark-navy);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100px;
+    cursor: default;
+}
+.sector-title {
+    font-weight: 600;
+    font-size: 1.1rem;
     transition: all 0.3s ease;
+}
+.sector-desc {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.95);
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    margin-top: 0;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .sector-item:hover {
     border-color: var(--primary-blue);
-    background-color: var(--white);
-    box-shadow: 0 4px 12px rgba(2, 132, 199, 0.08);
+    background-color: var(--primary-blue);
+    color: var(--white);
+    box-shadow: 0 8px 20px rgba(2, 132, 199, 0.15);
+    transform: translateY(-5px);
+}
+.sector-item:hover .sector-title {
+    color: var(--white);
+}
+.sector-item:hover .sector-desc {
+    opacity: 1;
+    max-height: 150px;
+    margin-top: 12px;
 }
 
 /* Contact Section */
@@ -186,7 +215,7 @@ p { margin-bottom: 16px; color: var(--text-light); }
 
 /* Interactive Map Card */
 .map-interactive {
-    background: url('https://placehold.co/800x600/e2e8f0/94a3b8?text=Map+View') center/cover no-repeat;
+    background: url('https://images.unsplash.com/photo-1506521781263-d8422e82f27a?auto=format&fit=crop&w=800&q=80') center/cover no-repeat;
     width: 100%;
     height: 100%;
     min-height: 400px;
