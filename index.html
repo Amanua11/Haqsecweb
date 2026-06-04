@@ -3,42 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blessing Collection | Boutique & Concierge</title>
+    <title>Blessing Collection | Premium Boutique</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <nav class="navbar">
         <div class="logo">BLESSING COLLECTION</div>
         <ul class="nav-links">
+            <li><a href="#hero">Home</a></li>
             <li><a href="#shop">Shop</a></li>
+            <li><a href="#reviews">Reviews</a></li>
             <li><a href="#order">Custom Order</a></li>
         </ul>
     </nav>
 
-    <header class="hero">
+    <header id="hero" class="hero">
         <h1>Elevated Style, Curated for You</h1>
-        <p>Premium Turkish imports and local Ethiopian designs.</p>
+        <p>Premium Turkish imports, local Ethiopian artistry, and luxury cosmetics.</p>
+        <a href="#shop" class="contact-btn hero-btn">Explore Collection</a>
     </header>
 
     <main>
-        <section id="shop">
-            <h2>Collection</h2>
+        <section id="shop" class="section-padding">
+            <h2 class="section-title">Our Collection</h2>
             <div class="grid" id="product-grid"></div>
         </section>
 
-        <section id="order" class="order-section">
-            <h2>Place a Custom Order</h2>
-            <form id="order-form">
+        <section id="reviews" class="section-padding" style="background: #0a0a0a;">
+            <h2 class="section-title">Client Testimonials</h2>
+            <div class="grid" id="reviews-grid"></div>
+        </section>
+
+        <section id="order" class="section-padding order-section">
+            <h2 class="section-title">Place a Custom Order</h2>
+            <p style="margin-bottom: 20px; color: #aaa;">Can't find your size? Looking for something specific? Let us know.</p>
+            <form id="order-form" onsubmit="return false;">
                 <input type="text" placeholder="Your Name" required>
-                <input type="text" placeholder="Item Name / Special Request" required>
-                <button type="submit" class="contact-btn">Send Inquiry to 0944268337</button>
+                <input type="text" placeholder="Item/Request Description" required>
+                <button type="button" class="contact-btn" onclick="window.location.href='tel:0944268337'">
+                    Inquire via Call: 0944268337
+                </button>
             </form>
         </section>
     </main>
 
     <footer>
         <p>Visit us: <a href="https://maps.app.goo.gl/PzgyaJUZbwHeeqfp9" target="_blank">Yeka View Apartment, Addis Ababa</a></p>
-        <p>Contact: 0944268337</p>
+        <p>Contact: <a href="tel:0944268337">0944268337</a></p>
+        <p style="margin-top: 15px; font-size: 0.8rem; color: #555;">© 2026 Blessing Collection. All rights reserved.</p>
     </footer>
 
     <script src="script.js"></script>
