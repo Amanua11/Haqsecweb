@@ -260,3 +260,23 @@ footer {
     transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 .animate-on-scroll.visible { opacity: 1; transform: translateY(0); }
+/* Add these to your existing CSS file */
+.stats-bar { background: #0f172a; color: white; padding: 30px 0; text-align: center; }
+.grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+.contact-form { max-width: 600px; margin: auto; display: flex; flex-direction: column; gap: 15px; }
+.contact-form input, .contact-form select, .contact-form textarea { padding: 12px; border: 1px solid #ccc; }
+
+.whatsapp-float {
+    position: fixed; bottom: 30px; right: 30px;
+    background-color: #25d366; color: white;
+    padding: 15px 25px; border-radius: 50px; font-weight: bold;
+    text-decoration: none; box-shadow: 0 4px 10px rgba(0,0,0,0.3); z-index: 1000;
+}
+
+.spiderweb-credit {
+    background: #0284c7; color: white; padding: 2px 8px;
+    border-radius: 4px; font-size: 0.75rem; margin-left: 10px;
+}
+
+details { background: #f1f5f9; padding: 15px; border-radius: 4px; margin-bottom: 10px; }
+summary { font-weight: 600; cursor: pointer; }
