@@ -11,87 +11,428 @@
     <header class="navbar">
         <div class="container nav-content">
             <a href="#" class="logo" style="text-decoration: none;">Haqsec<span class="accent-dot">.</span></a>
+            <div class="mobile-menu-btn" id="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
             <nav id="nav-menu">
                 <ul class="nav-links">
                     <li><a href="#about">Company</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#sectors">Sectors</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#faq">FAQ</a></li>
                     <li><a href="#contact" class="btn-primary">Request Consultation</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
+    <!-- HERO -->
     <section class="hero">
         <div class="hero-overlay"></div>
-        <div class="container hero-content">
+        <div class="container hero-content animate-on-scroll">
             <h1>Uncompromising Security. <br>Pristine Environments.</h1>
-            <p>Delivering elite protection and specialized cleaning solutions for embassies, financial institutions, and private enterprises.</p>
+            <p>Delivering elite protection and specialized cleaning solutions for embassies, financial institutions, and private enterprises across Addis Ababa, Ethiopia.</p>
+            <div class="hero-actions">
+                <a href="#contact" class="btn-primary btn-large">Get a Custom Quote</a>
+                <a href="#services" class="btn-outline btn-large">Explore Services</a>
+            </div>
         </div>
     </section>
 
-    <section class="stats-bar">
-        <div class="container grid-4">
-            <div><strong>500+</strong><span>Clients Served</span></div>
-            <div><strong>10+</strong><span>Years Exp.</span></div>
-            <div><strong>24/7</strong><span>Coverage</span></div>
-            <div><strong>Licensed</strong><span>& Certified</span></div>
+    <!-- TRUST BAR -->
+    <div class="trust-bar bg-light-blue">
+        <div class="container trust-grid">
+            <div class="trust-item animate-on-scroll">
+                <strong>✓ Reliable Coverage</strong>
+                <span>Dedicated support when you need it most.</span>
+            </div>
+            <div class="trust-item animate-on-scroll" style="transition-delay: 0.1s;">
+                <strong>✓ Certified Personnel</strong>
+                <span>Rigorously vetted and trained.</span>
+            </div>
+            <div class="trust-item animate-on-scroll" style="transition-delay: 0.2s;">
+                <strong>✓ Tailored Solutions</strong>
+                <span>Custom plans for your specific sector.</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- STATS BAR -->
+    <div class="stats-bar border-top-bottom">
+        <div class="container stats-grid">
+            <div class="stat-item animate-on-scroll">
+                <strong>500+</strong>
+                <span>Clients Served</span>
+            </div>
+            <div class="stat-item animate-on-scroll" style="transition-delay: 0.1s;">
+                <strong>10+</strong>
+                <span>Years of Experience</span>
+            </div>
+            <div class="stat-item animate-on-scroll" style="transition-delay: 0.2s;">
+                <strong>24/7</strong>
+                <span>Coverage Available</span>
+            </div>
+            <div class="stat-item animate-on-scroll" style="transition-delay: 0.3s;">
+                <strong>100%</strong>
+                <span>Licensed &amp; Certified</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- ABOUT -->
+    <section id="about" class="section bg-light-blue border-top-bottom">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="subtitle">Our Company</span>
+                <h2>Built on Integrity. Driven by Excellence.</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="grid-2 align-center">
+                <div class="animate-on-scroll">
+                    <img src="https://images.pexels.com/photos/3760067/pexels-photo-3760067.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Haqsec team" class="responsive-img" style="border-radius:4px; border:1px solid var(--border-color);">
+                </div>
+                <div class="animate-on-scroll" style="transition-delay: 0.15s;">
+                    <p>Founded in 2014 in Addis Ababa, Haq Security and Cleaning Services was established with a single mission: to provide enterprises and diplomatic missions across Ethiopia with protection and facility management they can genuinely rely on.</p>
+                    <p>What began as a small team of rigorously trained security professionals has grown into a full-service firm serving embassies, banks, corporate headquarters, residential estates, and active construction sites throughout the country.</p>
+                    <p>Our leadership team brings together decades of combined experience in security operations, facility management, and regulatory compliance, ensuring every client receives a service standard that meets and exceeds international benchmarks.</p>
+                    <ul class="about-values">
+                        <li>All personnel vetted, background-checked, and continuously trained</li>
+                        <li>Fully licensed under Ethiopian regulatory authorities</li>
+                        <li>Tailored service plans for every sector and scale</li>
+                        <li>Rapid response and dedicated account management</li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section id="about" class="container section">
-        <h2>About Haqsec</h2>
-        <p>Founded to redefine professional standards in Ethiopia, Haqsec has spent over a decade providing elite security and cleaning services. Our mission is to provide unwavering vigilance and meticulous hygiene to support the institutions that drive our economy.</p>
-    </section>
-
+    <!-- SERVICES -->
     <section id="services" class="container section">
-        <h2>Our Expertise</h2>
+        <div class="section-header animate-on-scroll">
+            <span class="subtitle">Our Expertise</span>
+            <h2>Core Integrated Services</h2>
+            <div class="divider"></div>
+        </div>
         <div class="grid-2">
-            <div class="card">
-                <h3>Security Services</h3>
-                <p>We provide comprehensive access control and perimeter defense.</p>
-                <ul>
-                    <li>✓ Background vetted personnel</li>
-                    <li>✓ Real-time incident reporting</li>
-                    <li>✓ Tailored operational protocols</li>
-                </ul>
+            <div class="card animate-on-scroll" style="transition-delay: 0.1s;">
+                <img src="https://images.pexels.com/photos/430208/pexels-photo-430208.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Corporate Security Camera" class="responsive-img">
+                <div class="card-content">
+                    <h3>Security Services</h3>
+                    <p>Highly trained personnel equipped to protect your assets, staff, and premises with uncompromising vigilance. Every guard undergoes intensive background verification, legal compliance training, and sector-specific preparation before deployment.</p>
+                    <ul class="service-list">
+                        <li>Access control and gatehouse management</li>
+                        <li>Perimeter patrol and monitoring</li>
+                        <li>CCTV surveillance and incident response</li>
+                        <li>Executive and VIP close protection</li>
+                        <li>Emergency response coordination</li>
+                        <li>Event and venue security</li>
+                    </ul>
+                    <a href="#contact" class="link-arrow">Secure your premises →</a>
+                </div>
             </div>
-            <div class="card">
-                <h3>Corporate Cleaning</h3>
-                <p>Ensuring a hygienic, welcoming environment for your operations.</p>
-                <ul>
-                    <li>✓ Deep-cleaning sanitization</li>
-                    <li>✓ Eco-friendly consumables</li>
-                    <li>✓ Specialized facility maintenance</li>
-                </ul>
+            <div class="card animate-on-scroll" style="transition-delay: 0.2s;">
+                <img src="https://images.pexels.com/photos/6195129/pexels-photo-6195129.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Corporate Cleaning Staff" class="responsive-img">
+                <div class="card-content">
+                    <h3>Corporate Cleaning</h3>
+                    <p>Professional janitorial and deep-cleaning solutions ensuring a hygienic, welcoming environment for your operations. We adhere to the highest health and safety standards and use environmentally responsible cleaning agents.</p>
+                    <ul class="service-list">
+                        <li>Daily and scheduled janitorial services</li>
+                        <li>Deep cleaning and sanitization</li>
+                        <li>Post-construction cleanup</li>
+                        <li>Carpet, upholstery, and window cleaning</li>
+                        <li>Waste management and recycling coordination</li>
+                        <li>Specialized cleaning for medical environments</li>
+                    </ul>
+                    <a href="#contact" class="link-arrow">Request facility management →</a>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="container section">
-        <h2>Request Consultation</h2>
-        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="contact-form">
-            <input type="text" name="name" placeholder="Name" required>
-            <input type="text" name="company" placeholder="Company">
-            <select name="service">
-                <option value="security">Security Services</option>
-                <option value="cleaning">Corporate Cleaning</option>
-            </select>
-            <textarea name="message" placeholder="Message"></textarea>
-            <button type="submit" class="btn-primary">Submit Request</button>
-        </form>
+    <!-- SECTORS -->
+    <section id="sectors" class="section bg-light-blue border-top-bottom">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="subtitle">Clientele</span>
+                <h2>Sectors We Serve</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="grid-6 sectors-list">
+                <div class="sector-item animate-on-scroll">
+                    <div class="sector-icon">🏠</div>
+                    <div class="sector-title">Individuals</div>
+                    <div class="sector-desc">Personalized security and detailed domestic cleaning for private residences and gated compounds.</div>
+                </div>
+                <div class="sector-item animate-on-scroll" style="transition-delay: 0.1s;">
+                    <div class="sector-icon">🏛️</div>
+                    <div class="sector-title">Embassies</div>
+                    <div class="sector-desc">High-level diplomatic security protocols and rigorous facility maintenance aligned with international standards.</div>
+                </div>
+                <div class="sector-item animate-on-scroll" style="transition-delay: 0.2s;">
+                    <div class="sector-icon">🏢</div>
+                    <div class="sector-title">Corporate Offices</div>
+                    <div class="sector-desc">Comprehensive access control, lobby management, and daily janitorial services.</div>
+                </div>
+                <div class="sector-item animate-on-scroll" style="transition-delay: 0.3s;">
+                    <div class="sector-icon">🏦</div>
+                    <div class="sector-title">Financial Institutions</div>
+                    <div class="sector-desc">Strict asset protection and specialized cleaning for banks and secure financial environments.</div>
+                </div>
+                <div class="sector-item animate-on-scroll" style="transition-delay: 0.4s;">
+                    <div class="sector-icon">🏗️</div>
+                    <div class="sector-title">Building Sites</div>
+                    <div class="sector-desc">Robust perimeter defense and post-construction debris removal for active project sites.</div>
+                </div>
+                <div class="sector-item animate-on-scroll" style="transition-delay: 0.5s;">
+                    <div class="sector-icon">🏥</div>
+                    <div class="sector-title">Healthcare</div>
+                    <div class="sector-desc">Infection-conscious cleaning and calm professional security for hospitals, clinics, and institutions.</div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <a href="https://wa.me/251986692425" class="whatsapp-float" target="_blank">Chat on WhatsApp</a>
+    <!-- TESTIMONIALS -->
+    <section id="testimonials" class="container section">
+        <div class="section-header animate-on-scroll">
+            <span class="subtitle">Client Voices</span>
+            <h2>Trusted by Those Who Demand the Best</h2>
+            <div class="divider"></div>
+        </div>
+        <div class="grid-3">
+            <div class="testi-card animate-on-scroll" style="transition-delay: 0.1s;">
+                <div class="testi-quote">"</div>
+                <p>Haqsec has been managing security at our facility for three years. Their guards are professional, discreet, and always well-briefed. We have had zero security incidents since engaging them.</p>
+                <div class="testi-author">
+                    <div class="testi-avatar">DT</div>
+                    <div>
+                        <div class="testi-name">Daniel T.</div>
+                        <div class="testi-role">Facility Manager, International Embassy</div>
+                    </div>
+                </div>
+            </div>
+            <div class="testi-card animate-on-scroll" style="transition-delay: 0.2s;">
+                <div class="testi-quote">"</div>
+                <p>We engaged Haqsec after a competitive tender. They won not just on price but on professionalism. The team is responsive and quality is consistent across all our branch locations.</p>
+                <div class="testi-author">
+                    <div class="testi-avatar">FG</div>
+                    <div>
+                        <div class="testi-name">Fikirte G.</div>
+                        <div class="testi-role">Operations Director, Commercial Bank</div>
+                    </div>
+                </div>
+            </div>
+            <div class="testi-card animate-on-scroll" style="transition-delay: 0.3s;">
+                <div class="testi-quote">"</div>
+                <p>The post-construction cleaning crew was thorough and fast. They had our new headquarters spotless and move-in ready two days ahead of schedule. We will absolutely use them again.</p>
+                <div class="testi-author">
+                    <div class="testi-avatar">MT</div>
+                    <div>
+                        <div class="testi-name">Mihret T.</div>
+                        <div class="testi-role">Project Manager, Real Estate Developer</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- FAQ -->
+    <section id="faq" class="section bg-light-blue border-top-bottom">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="subtitle">Common Questions</span>
+                <h2>Frequently Asked Questions</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item animate-on-scroll">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        How are your security personnel vetted?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Every guard undergoes a thorough background check, criminal record verification, and reference review before being considered. Successful candidates then complete a structured training program covering legal compliance, emergency response, and sector-specific protocols.</p>
+                    </div>
+                </div>
+                <div class="faq-item animate-on-scroll" style="transition-delay: 0.05s;">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        Is Haqsec licensed to operate in Ethiopia?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes. Haq Security and Cleaning Services is fully licensed and registered under the relevant Ethiopian regulatory authorities. Our documentation is available for review upon request during the contract negotiation process.</p>
+                    </div>
+                </div>
+                <div class="faq-item animate-on-scroll" style="transition-delay: 0.1s;">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        Do you offer 24/7 security coverage?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes. We offer round-the-clock security deployment for clients who require continuous coverage. A supervisor is always reachable for any incident escalation at any hour, and our scheduling system ensures no gaps in guard rotation.</p>
+                    </div>
+                </div>
+                <div class="faq-item animate-on-scroll" style="transition-delay: 0.15s;">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        What are your typical contract terms?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We offer both short-term and long-term contracts, typically ranging from one month to one year, renewable by agreement. All contracts include a clearly defined scope of work, a service level agreement, and a straightforward exit clause.</p>
+                    </div>
+                </div>
+                <div class="faq-item animate-on-scroll" style="transition-delay: 0.2s;">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        How quickly can you deploy a team?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>For standard deployments, we can have a team on-site within 48 to 72 hours of contract signing. For urgent situations, we will do everything possible to expedite deployment, often within 24 hours depending on availability.</p>
+                    </div>
+                </div>
+                <div class="faq-item animate-on-scroll" style="transition-delay: 0.25s;">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        Can you handle both security and cleaning for the same site?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Absolutely. Many of our clients benefit from our integrated model, where a single account manager coordinates both services for your facility. This simplifies billing, communication, and quality oversight significantly.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="container section">
+        <div class="grid-2 align-center">
+            <div class="contact-info animate-on-scroll">
+                <span class="subtitle">Contact Us</span>
+                <h2>Ready to elevate your standards?</h2>
+                <p class="contact-desc">Reach out to our management team to discuss a tailored security and facility management plan for your organization. We respond to all inquiries within one business day.</p>
+                <div class="contact-details">
+                    <div class="contact-row">
+                        <strong>General Inquiries:</strong> <a href="mailto:haqsec@gmail.com">haqsec@gmail.com</a>
+                    </div>
+                    <div class="contact-row">
+                        <strong>Phone:</strong> <a href="tel:0986692425">098 669 2425</a>
+                    </div>
+                    <div class="contact-row">
+                        <strong>WhatsApp:</strong> <a href="https://wa.me/251986692425" target="_blank">Chat with us on WhatsApp</a>
+                    </div>
+                    <div class="contact-row">
+                        <strong>Corporate Office:</strong> 2Q9P+MJV, Addis Ababa
+                    </div>
+                    <div class="contact-row">
+                        <strong>Hours:</strong> Mon &ndash; Sat, 9:00 AM &ndash; 6:00 PM (24/7 security line available)
+                    </div>
+                </div>
+                <div style="margin-top: 24px;">
+                    <a href="https://maps.app.goo.gl/vntmxjYLMcjhVcMz8?g_st=it" target="_blank" rel="noopener noreferrer" class="btn-primary">
+                        📍 Open in Google Maps →
+                    </a>
+                </div>
+            </div>
+
+            <div class="animate-on-scroll" style="transition-delay: 0.2s;">
+                <div class="contact-form-card">
+                    <h3 style="margin-bottom: 20px; color: var(--dark-navy);">Send Us a Message</h3>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" placeholder="Your name" />
+                        </div>
+                        <div class="form-group">
+                            <label for="company">Company / Organization</label>
+                            <input type="text" id="company" placeholder="Your organization" />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" placeholder="+251 9__ ___ ___" />
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Service Needed</label>
+                            <select id="service">
+                                <option value="">Select a service</option>
+                                <option>Security Services</option>
+                                <option>Corporate Cleaning</option>
+                                <option>Integrated Security &amp; Cleaning</option>
+                                <option>Other / Not Sure</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="4" placeholder="Tell us about your facility, sector, and what you need..."></textarea>
+                    </div>
+                    <button class="btn-primary btn-large" onclick="handleSubmit()" style="width:100%; margin-top: 8px; border: none; cursor: pointer;">Send Message →</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
     <footer>
         <div class="container">
-            <div class="footer-links">
-                <a href="#">Privacy Policy</a> | <a href="#">Terms</a>
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <div class="footer-logo">Haqsec.</div>
+                    <p style="color:#94a3b8; font-size:0.9rem; margin-top:8px; max-width:280px;">Elite security and facility management for embassies, financial institutions, and enterprises across Addis Ababa.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" title="LinkedIn">in</a>
+                        <a href="#" class="social-link" title="Facebook">f</a>
+                        <a href="https://wa.me/251986692425" class="social-link" title="WhatsApp" target="_blank">W</a>
+                        <a href="#" class="social-link" title="Telegram">T</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h5>Company</h5>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Our Services</a></li>
+                        <li><a href="#sectors">Sectors</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h5>Services</h5>
+                    <ul>
+                        <li><a href="#services">Security Services</a></li>
+                        <li><a href="#services">Corporate Cleaning</a></li>
+                        <li><a href="#services">Integrated Solutions</a></li>
+                        <li><a href="#contact">Get a Quote</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h5>Contact</h5>
+                    <ul>
+                        <li><a href="mailto:haqsec@gmail.com">haqsec@gmail.com</a></li>
+                        <li><a href="tel:0986692425">098 669 2425</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="https://maps.app.goo.gl/vntmxjYLMcjhVcMz8?g_st=it" target="_blank">Find Us on Maps</a></li>
+                    </ul>
+                </div>
             </div>
-            <p>© 2026 Haq Security and Cleaning Services. All rights reserved. 
-            <span class="spiderweb-credit">Website designed & developed by SpiderWeb</span></p>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Haq Security and Cleaning Services. All rights reserved.</p>
+                <p class="footer-credit">Website designed &amp; developed by <a href="#" target="_blank">SpiderWeb</a></p>
+            </div>
         </div>
     </footer>
+
+    <!-- WHATSAPP FLOAT -->
+    <a class="whatsapp-float" href="https://wa.me/251986692425" target="_blank" rel="noopener" title="Chat on WhatsApp">
+        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="white">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+        <span class="wa-tooltip">Chat on WhatsApp</span>
+    </a>
+
+    <script src="app.js"></script>
 </body>
 </html>
